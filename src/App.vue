@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <v-app id="inspire">
+        <v-toolbar color="indigo" dark fixed app>
+            <v-toolbar-title>Табло аэропорта</v-toolbar-title>
+        </v-toolbar>
+        <v-content>
+            <v-container fluid fill-height>
+                <v-layout
+                        justify-center
+                        align-center
+                >
+                </v-layout>
+            </v-container>
+        </v-content>
+        <v-footer color="indigo" app>
+        </v-footer>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        data: () => ({
+            drawer: null
+        }),
+        props: {
+            source: String
+        }
+    }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
