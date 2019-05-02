@@ -1,29 +1,23 @@
 <template>
     <v-app id="inspire">
-        <v-toolbar color="indigo" dark fixed app>
+        <v-toolbar dense color="indigo" dark fixed app>
             <v-toolbar-title>Табло аэропорта</v-toolbar-title>
         </v-toolbar>
         <v-content>
-            <v-container fluid fill-height>
-                <v-layout
-                        justify-center
-                        align-center
-                >
+            <v-container fluid fill-height grid-list-lg>
+                <v-layout justify-center>
+                    <app-board/>
                 </v-layout>
             </v-container>
         </v-content>
-        <v-footer color="indigo" app>
-        </v-footer>
     </v-app>
 </template>
 
 <script>
+    import appBoard from './components/app-boarrd'
     export default {
-        data: () => ({
-            drawer: null
-        }),
-        props: {
-            source: String
+        components: {
+            appBoard,
         }
     }
 </script>

@@ -1,21 +1,6 @@
-# test-airport-board
+# test_for_yandex
 
-## Project setup
-```
+# do it to start a project
 yarn install
-```
+yarn start
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
